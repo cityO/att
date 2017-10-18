@@ -1,0 +1,88 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-name" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-sex" class="control-label col-xs-12 col-sm-2">{:__('Sex')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sex" data-rule="required" class="form-control" name="row[sex]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-phone" class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-room" class="control-label col-xs-12 col-sm-2">{:__('Room')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-room" data-rule="required" class="form-control" name="row[room]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-mettingadd" class="control-label col-xs-12 col-sm-2">{:__('Mettingadd')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mettingadd" data-rule="required" class="form-control" name="row[mettingadd]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-seatnum" class="control-label col-xs-12 col-sm-2">{:__('Seatnum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-seatnum" data-rule="required" class="form-control" name="row[seatnum]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-groupnum" class="control-label col-xs-12 col-sm-2">{:__('Groupnum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-groupnum" data-rule="required" class="form-control" name="row[groupnum]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-groupadd" class="control-label col-xs-12 col-sm-2">{:__('Groupadd')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-groupadd" data-rule="required" class="form-control" name="row[groupadd]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-th" class="control-label col-xs-12 col-sm-2">{:__('Th')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-th" data-rule="required" class="form-control" name="row[th]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-fv" class="control-label col-xs-12 col-sm-2">{:__('Fv')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fv" data-rule="required" class="form-control" name="row[fv]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-six" class="control-label col-xs-12 col-sm-2">{:__('Six')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-six" data-rule="required" class="form-control" name="row[six]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-isload" class="control-label col-xs-12 col-sm-2">{:__('Isload')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-isload" class="form-control" name="row[isload]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-loadtime" class="control-label col-xs-12 col-sm-2">{:__('Loadtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-loadtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[loadtime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

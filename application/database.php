@@ -14,13 +14,13 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '127.0.0.1',
+    'hostname'        => '172.247.38.216',
     // 数据库名
-    'database'        => 'fastadmin',
+    'database'        => 'att',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'mysql',
     // 密码
-    'password'        => '',
+    'password'        => '@WANGsong20133',
     // 端口
     'hostport'        => '',
     // 连接dsn
