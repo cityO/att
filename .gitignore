@@ -8,6 +8,5 @@ vendor
 runtime
 addons
 public/assets/libs/
-!/application/admin/command/Install/*.lock
 /public/uploads
-!/application/admin/command/Install/install.lock
+
