@@ -19,7 +19,7 @@ class Mob extends Frontend
     public function index()
     {
         if ( Cookie::has('zw_info')){
-            $this->redirect(url('profile'));
+            $this->redirect(url('show'));
         }
         return $this->view->fetch();
     }
