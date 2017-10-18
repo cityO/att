@@ -26,7 +26,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
                         {field: 'name', title: __('Name')},
-                        {field: 'sex', title: __('Sex')},
+                        {field: 'sex', title: __('Sex'),formatter: function (value) {
+                            return value=='1'? '男' : '女';
+                        }},
                         {field: 'phone', title: __('Phone')},
                         {field: 'room', title: __('Room')},
                         {field: 'mettingadd', title: __('Mettingadd')},
@@ -36,7 +38,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'th', title: __('Th')},
                         {field: 'fv', title: __('Fv')},
                         {field: 'six', title: __('Six')},
-                        {field: 'isload', title: __('Isload')},
+                        {field: 'isload', title: __('Isload'),formatter:function (value) {
+                               return value=='1' ? '已到场' : '未到场'
+                        }},
                         {field: 'loadtime', title: __('Loadtime'), formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

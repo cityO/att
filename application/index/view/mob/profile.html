@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="__CDN__/assets/materilianz/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="__CDN__/assets/materilianz/js/materialize.min.js"></script>
+</head>
+<style>
+    * { margin: 0; padding: 0; list-style: none; }
+    body::after { content: ""; top: 0; left: 0; bottom: 0; right: 0; position: fixed; z-index: -1; background-color: #F4F4F4; }
+    body { height: 100%; background-color: #666; }
+    .lanren { position: fixed; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+    .remove-a { width: 100px; height: 30px; text-align: center; float: right; color: #fff; background: #26a69a; cursor: pointer; }
+    .square { width: 64px; height: 64px; box-sizing: border-box; }
+    .mask { background: rgba(51,51,51,0.9); width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+    .title-c{padding-top: 50px; text-align: center}
+</style>
+
+<body>
+
+<div class="row">
+    <h5 class="title-c">中威20周年庆典签到</h5>
+</div>
+
+<div class="row" style="padding-top: 50px;">
+</div>
+<div style="width: 100%;"> </div>
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('form').on('submit',function () {
+           console.log(this);
+            if (!$("input[name='name']").val()){
+               alert('请输入姓名');
+                return false;
+            }
+            if (!$("input[name='phone']").val()){
+               alert('请输入手机号');
+                return false;
+            }
+            if (!$("input[name='company']").val()) {
+               alert('请输入所在公司');
+                return false;
+            }
+            if (!$("input[name='dept']").val()) {
+               alert('请输入您的职位');
+                return false;
+            }
+        });
+
+
+//        $('.modal').modal();
+    });
+
+
+
+</script>
+</html>
