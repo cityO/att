@@ -43,8 +43,9 @@ class Mob extends Frontend
         }
     }
     public  function show(){
-        $user=$this->getinfo();
+        $userCookie=$this->getinfo();
         $set=Setting::get(1);
+        $user=User::get(['id'=>$userCookie['id']]);
         $this->assign('set',$set->invro);
         $this->assign('user',$user);
         return $this->view->fetch();

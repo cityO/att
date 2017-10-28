@@ -44,7 +44,7 @@
 }
 #page3{
     left: 200%;
-    background: yellow;
+    background: #ededed;
 }
 #page4{
     left: 300%;
@@ -60,7 +60,7 @@
 /* ====页脚样式 ==== */
 #footer ul li {
     float: left;
-    width: 50%;
+    width: 33.3%;
     display: inline-block;
     height: inherit;
     color: #262626;
