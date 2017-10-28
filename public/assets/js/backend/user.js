@@ -25,6 +25,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
+                        {field: 'img', title: __('Preview'), formatter: Controller.api.formatter.thumb},
                         {field: 'name', title: __('Name')},
                         {field: 'sex', title: __('Sex'),formatter: function (value) {
                             return value=='1'? '男' : '女';
@@ -59,6 +60,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         api: {
             bindevent: function () {
                 Form.api.bindevent($("form[role=form]"));
+            },
+            formatter: {
+                thumb: function (value, row, index) {
+                        var style = value == 'upyun' ? '!/fwfh/120x90' : '';
+                        return '<a href="' + value + '" target="_blank"><img src="' + value+ '" alt="" style="max-height:90px;max-width:120px"></a>';
+
+                },
+                url: function (value, row, index) {
+                    return '<a href="' + row.fullurl + '" target="_blank" class="label bg-green">' + value + '</a>';
+                },
             }
         }
     };
