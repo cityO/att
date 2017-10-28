@@ -2,6 +2,7 @@
 
 namespace app\index\controller;
 
+use app\admin\model\Setting;
 use app\admin\model\User;
 use app\common\controller\Frontend;
 use think\Cookie;
@@ -43,6 +44,8 @@ class Mob extends Frontend
     }
     public  function show(){
         $user=$this->getinfo();
+        $set=Setting::get(1);
+        $this->assign('set',$set->invro);
         $this->assign('user',$user);
         return $this->view->fetch();
     }
