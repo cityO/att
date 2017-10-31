@@ -82,7 +82,8 @@ $('#right_content').bind('swipeleft',function(){
 /*绘制canvas图像*/
 $(document).ready(function () {
     var img = new Image();
-    img.src = "https://ws4.sinaimg.cn/large/006tNc79ly1fl1u1t7281j30ob0yiwsh.jpg";
+    // img.src = "https://ws4.sinaimg.cn/large/006tNc79ly1fl1u1t7281j30ob0yiwsh.jpg";
+    img.src = "http://manager.ifunet.com/tpl.png";
     img.onload=function () {
        dwin(this);
     }
