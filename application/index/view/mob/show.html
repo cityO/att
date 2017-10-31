@@ -18,101 +18,29 @@
             <section id="content">
                 <div id="content_page">
                     <div id="page1">
-                        <!--载入文字-->
-                        <div>
-                        {$set}
+                        <!--<canvas id="signCard" width="874" height="1240">-->
+                        <img id="image-put" >
+                        <div style="display: none">
+                        <input type="hidden" id="name" value="王松">
+                        <input type="hidden" id="room" value="117">
+                        <input type="hidden" id="table" value="90">
+                        <input type="hidden" id="tpl" value="https://ws2.sinaimg.cn/large/006tKfTcly1fl1qmq9frdj30oa0ygh1n.jpg">
+                        <canvas id="signCard" width="874" height="1240">
+                        <!--<canvas id="signCard"  style="width:100%;height:100%;">-->
+                        <!--<canvas id="signCard" >-->
+                        </canvas>
                         </div>
                     </div>
                     <div id="page2">
-                        <section data-role="paragraph" class="_135editor active" style="border: 0px none; padding: 0px;" data-color="rgb(30, 155, 232)" data-custom="rgb(30, 155, 232)">
-                            <p>
-                                <span style="font-size: 18px; font-family: 宋体;">尊敬的中威合作伙伴：</span><span style="font-size: 21px; font-family: 宋体; color: #4F81BD;">{$user.name}</span>
-                            </p>
-                            <p style="text-indent:43px">
-                                <span style="font-size: 16px; font-family: 宋体;">在这个天高云淡、风清月朗的深秋时节，热忱欢迎您来到美丽的中原。考虑到您在中威二十周年庆典会议期间的饮食、住宿、以及出行等问题，为使您轻松愉悦地享受本次会议，我们特别为您做如下安排：</span>
-                            </p>
-                            <p style="text-indent:43px">
-                                <strong><span style="font-family: 宋体;">一、 </span></strong><strong><span style="font-family: 宋体;">住宿安排：</span></strong>
-                            </p>
-                            <p style="text-indent:40px">
-                                <span style="font-size: 15px; font-family: 宋体;">黄河南岸、桃花峪旁，环境宜人，清幽淡雅。我们已在<strong>郑州江南春温泉度假酒店</strong>为您预定了</span><span style="color: #1E9BE8;"><span style="font-size: 15px; font-family: 宋体;">住宿房间号：</span><span style="font-size: 21px; font-family: 宋体;">{$user.room}</span></span>
-                            </p>
-                            <p style="margin-left:28px">
-                                <span style="font-size: 16px;"><strong><span style="font-family: 宋体;">&nbsp;&nbsp;&nbsp;&nbsp;二、就餐安排：</span></strong></span>
-                            </p>
-                            <p style="margin-left: 28px;text-indent: 32px">
-                                <span style="font-size: 15px; font-family: 宋体;">来到中原，自然要尝尝豫菜，其口味居中，调和众家之长，兼具南北特色，相信一定能触动您的味蕾。</span>
-                            </p>
-                            <p style="margin-left:28px">
-                                <span style="color: #4F81BD;"><span style="font-size: 15px; font-family: 宋体;">4号晚餐：</span><span style="font-size: 21px; font-family: 宋体;">{$user.th}</span></span>
-                            </p>
-                            <p style="margin-left:28px">
-                                <span style="color: #4F81BD;"><span style="color: #4F81BD; font-size: 15px; font-family: 宋体;">5号午餐：</span><span style="color: #4F81BD; font-size: 21px; font-family: 宋体;">{$user.fv}</span></span>
-                            </p>
-                            <p style="margin-left:28px">
-                                <span style="color: #4F81BD;"><span style="color: #4F81BD; font-size: 15px; font-family: 宋体;">5号晚餐：</span><span style="color: #4F81BD; font-size: 21px; font-family: 宋体;">{$user.fv}</span></span>
-                            </p>
-                            <p style="margin-left:28px">
-                                <span style="color: #4F81BD;"><span style="color: #4F81BD; font-size: 15px; font-family: 宋体;">6号午餐：</span><span style="color: #4F81BD; font-size: 21px; font-family: 宋体;">{$user.six}</span></span>
-                            </p>
-                            <p style="margin-left:76px">
-                                <span style="font-size: 16px;"><strong>三、<span style="font-weight: normal; line-height: normal; font-family: &#39;Times New Roman&#39;;">&nbsp; </span></strong><strong><span style="font-family: 宋体;">会议地点及座次安排：</span></strong></span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="font-size: 15px; font-family: 宋体;">千里逢迎，高朋满座。</span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="color: #4F81BD;"><span style="font-size: 15px; font-family: 宋体;">本次会议地点定在:</span><span style="font-size: 21px;">{$user.mettingadd}</span></span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="color: #4F81BD;"><span style="font-size: 15px; font-family: 宋体;">您的座位号：</span><span style="font-size: 21px;"></span>{$user.seatnum}</span><span style="font-size:21px;font-family: 宋体"></span>
-                            </p>
-                            <p style="margin-left:76px">
-                                <span style="font-size: 16px;"><strong>四、<span style="font-weight: normal; line-height: normal; font-family: &#39;Times New Roman&#39;;">&nbsp; </span></strong><strong><span style="font-family: 宋体;">会议合影安排：</span></strong></span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="font-size: 15px; font-family: 宋体;">照片也许会褪色，但笑容却能保存永久。</span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="font-size: 15px; color: #4F81BD;"><span style="font-size: 15px; font-family: 宋体;">合影时间：</span>2017<span style="font-size: 15px; font-family: 宋体;">年</span>11<span style="font-size: 15px; font-family: 宋体;">月</span>5<span style="font-size: 15px; font-family: 宋体;">日</span>12:00</span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="color: #4F81BD;"><span style="color: #4F81BD; font-size: 15px; font-family: 宋体;">合影地点：</span><span style="color: #4F81BD; font-size: 21px;">{$user.groupadd}</span></span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="color: #4F81BD;"><span style="color: #4F81BD; font-size: 15px; font-family: 宋体;">您的合影位置：</span><span style="color: #4F81BD; font-size: 21px;"></span>{$user.groupnum}</span><span style="font-size:21px;font-family: 宋体"></span>
-                            </p>
-                            <p style="margin-left:76px">
-                                <span style="font-size: 16px;"><strong>五、<span style="font-weight: normal; line-height: normal; font-family: &#39;Times New Roman&#39;;">&nbsp; </span></strong><strong><span style="font-family: 宋体;">会议流程</span></strong></span>
-                            </p>
-                            <p style="margin-left:76px;text-indent:0">
-                                <span style="font-size: 15px;"><strong><span style="font-family: 宋体;">（附下）</span></strong></span>
-                            </p>
-                            <p style="text-indent:32px">
-                                <span style="font-size: 15px;">&nbsp;</span>
-                            </p>
-                            <p style="text-indent:32px">
-                                <span style="font-size: 15px; font-family: 宋体;">“秋风吹不尽，总是感恩情”。二十年来，真诚感恩与中威一路走来的朋友们，是你们的信赖与支持让我们在事业的道路上不断进步，愿我们以二十周年庆典为契机，共襄盛会，共铸辉煌，携手迎接下一年美好的二十年！</span>
-                            </p>
-                            <p>
-                                <span style="font-size:21px">&nbsp;</span>
-                            </p>
-                            <p>
-                                <br/>
-                            </p>
-                        </section>
-                    </div>
-                    <div id="page3">
-                        <img src="{$user.img}" alt="">
+                        <img src="https://ws4.sinaimg.cn/large/006tKfTcly1fl1qmnlmloj30af0ij45g.jpg" alt="">
                     </div>
                 </div>
             </section>
 
             <footer id="footer">
                 <ul>
-                    <li class="current">庆典流程</li>
-                    <li >来宾安排</li>
-                    <li >签到卡</li>
+                    <li class="current">签到卡</li>
+                    <li >庆典流程</li>
                 </ul>
             </footer>
         </section>

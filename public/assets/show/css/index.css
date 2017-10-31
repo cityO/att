@@ -60,7 +60,7 @@
 /* ====页脚样式 ==== */
 #footer ul li {
     float: left;
-    width: 33.3%;
+    width: 50%;
     display: inline-block;
     height: inherit;
     color: #262626;
