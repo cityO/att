@@ -31,14 +31,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                             return value=='1'? '男' : '女';
                         }},
                         {field: 'phone', title: __('Phone')},
-                        {field: 'room', title: __('Room')},
-                        {field: 'mettingadd', title: __('Mettingadd')},
+                        // {field: 'room', title: __('Room')},
+                        // {field: 'mettingadd', title: __('Mettingadd')},
                         {field: 'seatnum', title: __('Seatnum')},
-                        {field: 'groupnum', title: __('Groupnum')},
-                        {field: 'groupadd', title: __('Groupadd')},
-                        {field: 'th', title: __('Th')},
+                        // {field: 'groupnum', title: __('Groupnum')},
+                        // {field: 'groupadd', title: __('Groupadd')},
+                        // {field: 'th', title: __('Th')},
                         {field: 'fv', title: __('Fv')},
-                        {field: 'six', title: __('Six')},
+                        // {field: 'six', title: __('Six')},
                         {field: 'isload', title: __('Isload'),formatter:function (value) {
                                return value=='1' ? '已到场' : '未到场'
                         }},
