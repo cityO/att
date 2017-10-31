@@ -109,6 +109,6 @@ function dwin(img) {
     context.fillText(room, 320, 780);
     context.fillText(table, 670, 780);
     var src=canvas.toDataURL("image/png");
-    // console.log(src);
+    console.log(src);
     imgput.attr('src',src);
 }
