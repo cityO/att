@@ -60,4 +60,5 @@ class Mob extends Frontend
         }
 
     }
+
 }

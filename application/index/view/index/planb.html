@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>庆典流程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <img id="image-put" style="width: 100%" >
+    </div>
+    <div class="col-md-6" style="margin-top: 30%">
+        <p class="bg-success">输入客户信息,点击生成签到卡</p>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">姓名</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="姓名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="room" class="col-sm-2 control-label">座位号</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="room" id="room" placeholder="座位号">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="table" class="col-sm-2 control-label">晚宴桌号</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="table" id="table" placeholder="晚宴桌号">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" style="float: left">
+                    <!--<input type="hidden" id="img" >-->
+
+                    <button type="submit" onclick="dwin()"  class="btn btn-primary">生成签到卡</button>
+                    <a href=""  class="btn btn-success btn-block" id="img" style="display: none;width: 21%;margin-top: 5px">下载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<section id="layout">
+    <section class="page-wrapper">
+
+        <section id="right_content">
+
+            <section id="content">
+                <div id="content_page">
+                    <div id="page1">
+                        <!--<canvas id="signCard" width="874" height="1240">-->
+                        <!--<img id="image-put" >-->
+                        <div style="display: none">
+                        <!--<input type="hidden" id="name" value="name">-->
+                        <!--<input type="hidden" id="room" value="room">-->
+                        <!--<input type="hidden" id="table" value="table">-->
+                        <!--<input type="hidden" id="tpl" value="https://ws2.sinaimg.cn/large/006tKfTcly1fl1qmq9frdj30oa0ygh1n.jpg">-->
+                        <canvas id="signCard" width="874" height="1240">
+                        <!--<canvas id="signCard"  style="width:100%;height:100%;">-->
+                        <!--<canvas id="signCard" >-->
+                        </canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--<footer id="footer">-->
+                <!--<ul>-->
+                    <!--<li class="current">签到卡</li>-->
+                    <!--<li >庆典流程</li>-->
+                <!--</ul>-->
+            <!--</footer>-->
+        </section>
+    </section>
+</section>
+</body>
+</html>
+<script src="__CDN__/assets/show/js/jquery-2.0.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="__CDN__/assets/show/js/jgestures.min.js"></script>
+<script src="__CDN__/assets/show/js/planb.js"></script>

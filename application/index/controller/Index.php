@@ -25,4 +25,7 @@ class Index extends Frontend
         return jsonp(['newslist' => $newslist, 'new' => count($newslist), 'url' => 'http://www.fastadmin.net?ref=news']);
     }
 
+    public function planb(){
+        return $this->view->fetch();
+    }
 }

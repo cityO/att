@@ -81,15 +81,21 @@ $('#right_content').bind('swipeleft',function(){
 
 /*绘制canvas图像*/
 $(document).ready(function () {
-    var img = new Image();
-    // img.src = "https://ws4.sinaimg.cn/large/006tNc79ly1fl1u1t7281j30ob0yiwsh.jpg";
-    img.src = "http://manager.ifunet.com/tpl.png";
-    img.onload=function () {
-       dwin(this);
-    }
+    // var img = new Image();
+    // // img.src = "https://ws4.sinaimg.cn/large/006tNc79ly1fl1u1t7281j30ob0yiwsh.jpg";
+    // img.src = "../../tpl.png";
+    // img.onload=function () {
+    //    dwin(this);
+    // }
 });
 
 function dwin(img) {
+    var img = new Image();
+    // img.src = "https://ws4.sinaimg.cn/large/006tNc79ly1fl1u1t7281j30ob0yiwsh.jpg";
+    img.src = "../../tpl.png";
+    img.onload=function () {
+        dwin(this);
+    }
     var canvas = document.getElementById('signCard');
     var name = $('#name').val();
     var room = $('#room').val();
@@ -110,5 +116,14 @@ function dwin(img) {
     context.fillText(table, 700, 772);
     var src=canvas.toDataURL("image/png");
     // console.log(src);
+    $('#img').attr('href',src);
+    $('#img').attr('download',name);
     imgput.attr('src',src);
+    $('#img').css('display','block');
+}
+function down(){
+    alert('111');
+    var a=$('#img');
+        // a.download=$('#name').val()+'.png';
+        a.click();
 }
