@@ -106,8 +106,8 @@ function dwin(img) {
     var y = Math.floor(canvas.height / 2 - 200 / 2);
     context.fillText(name, x, 490); //设置文本内容
     context.font = "60px 'sans-serif'"; //设置字体
-    context.fillText(room, 350, 772);
-    context.fillText(table, 700, 772);
+    context.fillText(room, 350, 752);
+    context.fillText(table, 700, 752);
     var src=canvas.toDataURL("image/png");
     // console.log(src);
     imgput.attr('src',src);
